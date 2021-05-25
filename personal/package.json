@@ -19,5 +19,9 @@
     "node": "^14.0.0",
     "nodemon": "^2.0.6",
     "sequelize": "^6.5.0"
+  },"scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
