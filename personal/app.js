@@ -8,12 +8,12 @@ const routes = require("./routes/routes");
 let port = process.env.PORT;
 var app = express();
 const mongoose =require('mongoose');
-const url = 'mongodb://localhost/practice';
-mongoose.connect(url);
-const con = mongoose.connection;
-con.on('open',()=>{
-  console.log('Connected with mongodb.....')
-})
+// const url = 'mongodb://localhost/practice';
+// mongoose.connect(url);
+// const con = mongoose.connection;
+// con.on('open',()=>{
+//   console.log('Connected with mongodb.....')
+// })
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

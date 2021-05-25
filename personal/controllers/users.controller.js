@@ -5,7 +5,8 @@ const Users = require('../models/users')
 exports.user =async (req, res) => {
   try{
     console.log('reached in user controller')
-    let users = await Users.find();
+    // let users = await Users.find();
+    let users=[]
     defaultResponse().success(
         constants.DATA_RETRIEVED,
         users,
@@ -20,7 +21,8 @@ exports.user =async (req, res) => {
 exports.findOneUser =async (req, res) => {
   try{
     console.log('reached in user controller')
-    let users = await Users.findById(req.params.id);
+    let users=[]
+    // let users = await Users.findById(req.params.id);
     defaultResponse().success(
         constants.DATA_RETRIEVED,
         users,
@@ -35,12 +37,13 @@ exports.findOneUser =async (req, res) => {
 
 exports.save =async (req, res) => {
   try{
-    const user = new Users({
-      name:req.body.name,
-      phoneNumber:req.body.phoneNumber,
-      email:req.body.email,
-    })
-    let users = await user.save();
+    // const user = new Users({
+    //   name:req.body.name,
+    //   phoneNumber:req.body.phoneNumber,
+    //   email:req.body.email,
+    // })
+    // let users = await user.save();
+    let users=[];
     defaultResponse().success(
         constants.DATA_RETRIEVED,
         users,
